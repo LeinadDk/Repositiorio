@@ -1,24 +1,390 @@
-.titulo_juego{
-    color: teal;
-    background-color: darkorange;
-    width: 310px;
-    height: 50px;
+  @import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@300&display=swap');
+
+body{
+    font-family: 'Unbounded', cursive;
+    background-color: #82CD47;
 }
 
-label{
-    background-color: aquamarine;
-    width: 250px;
-    height: 100px;
+.titulo_juego{
+    color: white;
+    font-size: 48px;
 }
+
+.tarjeta{
+    display: inline-block;
+    height: 100px;
+    width: 180px;
+    background-color: orange;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px;
+    border-radius: 10px;
+    display: flex;
+}
+
+.tarjetas{
+    display: flex;
+    gap: 10px;
+    color: white;
+    cursor: pointer;
+    transition:.5s;
+    overflow: hidden;
+}
+
+.tarjetas:hover{
+    color: white;
+}
+
+.tarjetas img{
+    width: 80px;
+}
+
+.subtitulo{
+    color: white;
+}
+
+.bttn{
+    background-color: blueviolet;
+    position: relative;
+    color: white;
+    cursor: pointer;
+    transition:.5s;
+    overflow: hidden;
+    width: 85px;
+    height: 36px;
+    margin-top: 30px;
+}
+
+.bttn:hover{
+    color: white
+}
+
+.bttn:active{
+    color: blueviolet;
+    background-color: white;
+}
+.bttn span{
+    position: absolute;
+    background-color: white;
+    transition: .5s;
+}
+.bttn span:nth-child(1){
+    width: 100%;
+    height: 1px;
+    top: 0;
+    left: -100%;
+
+}
+.bttn span:nth-child(2){
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    right: -100%;
+
+}
+.bttn span:nth-child(3){
+    width: 1px;
+    height: 100%;
+    bottom: -100%;
+    left: 0;
+
+}
+.bttn span:nth-child(4){
+    width: 1px;
+    height: 100%;
+    top: -100%;
+    right: 0;
+
+}
+
+.bttn:hover span:nth-child(1) {
+    left: 0;
+}
+
+.bttn:hover span:nth-child(2) {
+    right: 0;
+}
+
+.bttn:hover span:nth-child(3) {
+    bottom: 0;
+}
+
+.bttn:hover span:nth-child(4) {
+    top: 0;
+}
+
+#Seleccionar_mascota{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+}
+
+h2{
+    display: flex;
+    justify-content: center;
+}
+
+p{
+        display: flex;
+        justify-content: center;
+}
+
+#mascota_jugador{
+    margin-left: 6px;
+    margin-right: 6px;
+}
+
+#mascota_enemigo{
+    margin-left: 6px;
+    margin-right: 6px;
+}
+
+#vidas_mascota_jugador{
+    margin-left: 6px;
+    margin-right: 6px;
+}
+
+#vidas_mascota_enemigo{
+    margin-left: 6px;
+    margin-right: 6px;
+}
+
 
 input{
-    background-color: aqua;
-    width: 250px;
-    height: 100px;
+    display: none;
 }
 
-button{
-    background-color: blueviolet;
-    width: 250px;
-    height: 100px;
+.boton_fuego{
+    background-color: rgb(210, 17, 17);
+    position: relative;
+    color: white;
+    cursor: pointer;
+    transition:.5s;
+    overflow: hidden;
+    width: 85px;
+    height: 36px;
+    margin-top: 38px;
+    margin-left: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.boton_fuego:hover{
+    color: white;
+}
+
+.boton_fuego:active{
+    color: rgb(217, 7, 7);
+    background-color: white;
+}
+.boton_fuego span{
+    position: absolute;
+    background-color: rgb(251, 251, 251);
+    transition: .5s;
+}
+
+.boton_fuego span:nth-child(1){
+    width: 100%;
+    height: 1px;
+    top: 0;
+    left: -100%;
+
+}
+.boton_fuego span:nth-child(2){
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    right: -100%;
+
+}
+.boton_fuego span:nth-child(3){
+    width: 1px;
+    height: 100%;
+    bottom: -100%;
+    left: 0;
+
+}
+.boton_fuego span:nth-child(4){
+    width: 1px;
+    height: 100%;
+    top: -100%;
+    right: 0;
+
+}
+
+.boton_fuego:hover span:nth-child(1) {
+    left: 0;
+}
+
+.boton_fuego:hover span:nth-child(2) {
+    right: 0;
+}
+
+.boton_fuego:hover span:nth-child(3) {
+    bottom: 0;
+}
+
+.boton_fuego:hover span:nth-child(4) {
+    top: 0;
+}
+
+.boton_agua{
+    background-color: rgb(5, 57, 180);
+    position: relative;
+    color: white;
+    cursor: pointer;
+    transition:.5s;
+    overflow: hidden;
+    width: 85px;
+    height: 36px;
+    margin-top: 38px;
+    margin-left: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.boton_agua:hover{
+    color: white;
+}
+
+.boton_agua:active{
+    color: rgb(5, 57, 180);
+    background-color: white;
+}
+.boton_agua span{
+    position: absolute;
+    background-color:rgb(251, 251, 251);
+    transition: .5s;
+}
+
+.boton_agua span:nth-child(1){
+    width: 100%;
+    height: 1px;
+    top: 0;
+    left: -100%;
+
+}
+.boton_agua span:nth-child(2){
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    right: -100%;
+
+}
+.boton_agua span:nth-child(3){
+    width: 1px;
+    height: 100%;
+    bottom: -100%;
+    left: 0;
+
+}
+.boton_agua span:nth-child(4){
+    width: 1px;
+    height: 100%;
+    top: -100%;
+    right: 0;
+
+}
+
+.boton_agua:hover span:nth-child(1) {
+    left: 0;
+}
+
+.boton_agua:hover span:nth-child(2) {
+    right: 0;
+}
+
+.boton_agua:hover span:nth-child(3) {
+    bottom: 0;
+}
+
+.boton_agua:hover span:nth-child(4) {
+    top: 0;
+}
+
+.boton_tierra{
+    background-color: brown;
+    position: relative;
+    color: white;
+    cursor: pointer;
+    transition:.5s;
+    overflow: hidden;
+    width: 85px;
+    height: 36px;
+    margin-top: 38px;
+    margin-left: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.boton_tierra:hover{
+    color: white;
+}
+
+.boton_tierra:active{
+    color: brown;
+    background-color: white;
+}
+.boton_tierra span{
+    position: absolute;
+    background-color:rgb(251, 251, 251);
+    transition: .5s;
+}
+
+.boton_tierra span:nth-child(1){
+    width: 100%;
+    height: 1px;
+    top: 0;
+    left: -100%;
+
+}
+.boton_tierra span:nth-child(2){
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    right: -100%;
+
+}
+.boton_tierra span:nth-child(3){
+    width: 1px;
+    height: 100%;
+    bottom: -100%;
+    left: 0;
+
+}
+.boton_tierra span:nth-child(4){
+    width: 1px;
+    height: 100%;
+    top: -100%;
+    right: 0;
+
+}
+
+.boton_tierra:hover span:nth-child(1) {
+    left: 0;
+}
+
+.boton_tierra:hover span:nth-child(2) {
+    right: 0;
+}
+
+.boton_tierra:hover span:nth-child(3) {
+    bottom: 0;
+}
+
+.boton_tierra:hover span:nth-child(4) {
+    top: 0;
+}
+
+.botoness{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
 }

@@ -9,42 +9,83 @@
 <body>
         <section id="Seleccionar_mascota">
             <h1 class="titulo_juego">
-                MOKE!!!! 🔥🌊🌱
+                Chinpokomon
             </h1>  
-                     <h2>Elige a tu mascota:</h2>
-        
+                     <h2 class="subtitulo">Elige a tu mascota:</h2>
+        <div class="tarjetas">
+            <label class="tarjeta" for="hypodoge">
+                <p id="hypo"> Hypodoge </p>
+                <img src="./assets/hypodoge.png" alt="Hypodoge">
+            </label>
             <input type="radio" name="mascota" id="hypodoge">
-            <label for="hypodoge">Hypodoge</label>
+            <label class="tarjeta" for="turtnoise">
+                <p > Turtnoise </p>
+                <img src="./assets/tukpalm.png" alt="turtnoise">
+            </label>
             <input type="radio" name="mascota" id="turtnoise">
-            <label for="turtnoise">Turtnoise</label>
+            <label class="tarjeta" for="ratguey">
+                <p> ratguey </p>
+                <img src="./assets/ratguey.png" alt="ratguey">
+            </label>
             <input type="radio" name="mascota" id="ratguey">
-            <label for="ratguey">ratguey</label>
+            <label class="tarjeta" for="lagstevis">
+                <p> lagstevis </p>
+                <img src="./assets/hypodoge.png" alt="lagstevis">
+            </label>
             <input type="radio" name="mascota" id="lagstevis">
-            <label for="lagstevis">lagstevis</label>
+            <label class="tarjeta" for="tukpalm">
+                <p> tukpalm </p>
+                <img src="./assets/tukpalm.png" alt="tukpalm">
+            </label>
             <input type="radio" name="mascota" id="tukpalm">
-            <label for="tukpalm">tukpalm</label>
-            <input type="radio" name="mascota" id="pydos">
-            <label for="pydos">pydos</label>            
+            <label class="tarjeta"  for="pydos">
+                <p> pydos </p>
+                <img src="./assets/ratguey.png" alt="pydos">
+            </label> 
+            <input type="radio" name="mascota" id="pydos"> 
+        </div>                      
         
-            <button id="confirmar_Mascota">Confirmar</button>
+            <button class="bttn" id="confirmar_Mascota">
+               <span></span>
+               <span></span>
+               <span></span>
+               <span></span>
+                Confirmar
+            </button>
         </section>
 
 
         <section id="Seleccionar_ataque">
-            <h1 class="titulo_juego">
-                MOKE!!!! 🔥🌊🌱
-            </h1>
-        <h2>Elige tu ataque</h2>
-        
-        
-        <p>tu mascota <span id="mascota_jugador"></span> tiene <span id="vidas_mascota_jugador">3</span> vidas</p>
-        <p>la mascota <span id="mascota_enemigo"></span> del enemigo tiene <span id="vidas_mascota_enemigo">3 vidas</span></p>
-        
-            <p>
-                <button id="boton_fuego">Fuego🔥</button>
-                <button id="boton_agua">Agua🌊</button>
-                <button id="boton_tierra">Tierra🌱</button>
-            </p>
+                    <h1 class="titulo_juego">
+                        MOKE!!!! 🔥🌊🌱
+                    </h1>
+                <h2>Elige tu ataque</h2>
+                
+                
+                <p>tu mascota <span id="mascota_jugador"></span>  tiene  <span id="vidas_mascota_jugador">3</span> vidas </p>
+                <p>la mascota <span id="mascota_enemigo"></span>  del enemigo tiene  <span id="vidas_mascota_enemigo"> 3 vidas </span></p>
+                    <p>
+                        <div class="botoness">
+                            <button class="boton_fuego" id="boton_fuego">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                Fuego🔥</button>
+                            <button class="boton_agua" id="boton_agua">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                Agua🌊</button>
+                            <button class="boton_tierra" id="boton_tierra">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                Tierra🌱</button>
+                        </div>
+                    </p>
         </section>
         <section id="mensaje">
         </section>      
