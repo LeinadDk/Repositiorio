@@ -31,7 +31,7 @@ function seleccionar_mascota_jugador(){
     sectionSeleccionar_mascota.style.display = "none"
     
     let sectionSeleccionar_ataque = document.getElementById("Seleccionar_ataque")
-    sectionSeleccionar_ataque.style.display = "block"
+    sectionSeleccionar_ataque.style.display = "flex"
 
     let inputHypodoge = document.getElementById('hypodoge')
     let inputturtnoise = document.getElementById('turtnoise')
@@ -198,6 +198,7 @@ function crearMensajeFinal(resultado_final){
 
     let sectionreiniciar = document.getElementById("boton_reset")
     sectionreiniciar.style.display = "block"
+    
 
     }
  

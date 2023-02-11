@@ -3,6 +3,9 @@
 body{
     font-family: 'Unbounded', cursive;
     background-color: #82CD47;
+    background-image:url("assets/wallpaperbetter.com_1366x768.jpg");
+    background-size: cover;
+    background: -o-repeating-linear-gradient();
 }
 
 .titulo_juego{
@@ -170,7 +173,7 @@ input{
     overflow: hidden;
     width: 85px;
     height: 36px;
-    margin-top: 38px;
+    margin-top: 10px;
     margin-left: 5px;
     margin-right: 10px;
     margin-bottom: 10px;
@@ -244,7 +247,7 @@ input{
     overflow: hidden;
     width: 85px;
     height: 36px;
-    margin-top: 38px;
+    margin-top: 10px;
     margin-left: 5px;
     margin-right: 10px;
     margin-bottom: 10px;
@@ -318,7 +321,7 @@ input{
     overflow: hidden;
     width: 85px;
     height: 36px;
-    margin-top: 38px;
+    margin-top: 10px;
     margin-left: 5px;
     margin-right: 10px;
     margin-bottom: 10px;
@@ -387,4 +390,89 @@ input{
     display: flex;
     justify-content: center;
     margin-top: 10px;
+}
+
+#reset{
+    display: block;
+    display: flex;
+    justify-content: center;
+}
+
+.botonreset{
+    background-color: blueviolet;
+    position: relative;
+    color: white;
+    cursor: pointer;
+    transition:.5s;
+    overflow: hidden;
+    width: 110px;
+    height: 36px;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.botonreset:hover{
+    color: white;
+}
+
+.botonreset:active{
+    color: blueviolet   ;
+    background-color: white;
+}
+.botonreset span{
+    position: absolute;
+    background-color:rgb(251, 251, 251);
+    transition: .5s;
+}
+
+.botonreset span:nth-child(1){
+    width: 100%;
+    height: 1px;
+    top: 0;
+    left: -100%;
+
+}
+.botonreset span:nth-child(2){
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    right: -100%;
+
+}
+.botonreset span:nth-child(3){
+    width: 1px;
+    height: 100%;
+    bottom: -100%;
+    left: 0;
+
+}
+.botonreset span:nth-child(4){
+    width: 1px;
+    height: 100%;
+    top: -100%;
+    right: 0;
+
+}
+
+.botonreset:hover span:nth-child(1) {
+    left: 0;
+}
+
+.botonreset:hover span:nth-child(2) {
+    right: 0;
+}
+
+.botonreset:hover span:nth-child(3) {
+    bottom: 0;
+}
+
+.botonreset:hover span:nth-child(4) {
+    top: 0;
+}
+
+#Seleccionar_ataque{
+    flex-direction: column;
+    align-items: center;
 }
