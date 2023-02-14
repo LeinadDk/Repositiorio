@@ -131,18 +131,18 @@ function combate(){
     if(ataqueEnemigo == ataquejugador){
         crearMensaje ("EMPATE")
     }else if(ataquejugador == "FUEGO" && ataqueEnemigo =="TIERRA"){
-    crearMensaje ("GANASTE")
+    crearMensaje ("!!!!!!GANASTE!!!!!")
         vidasEnemigo--
         spanvidasenemigo.innerHTML = vidasEnemigo
     }else if(ataquejugador == "AGUA" && ataqueEnemigo == "FUEGO"){
-    crearMensaje ("GANASTE")
+    crearMensaje ("!!!!!GANASTE!!!!!")
         vidasEnemigo--
         spanvidasenemigo.innerHTML = vidasEnemigo
     }else if(ataquejugador == "TIERRA" && ataqueEnemigo =="AGUA"){
-    crearMensaje ("GANASTE")
+    crearMensaje ("!!!!!GANASTE!!!!!")
         vidasEnemigo--
         spanvidasenemigo.innerHTML = vidasEnemigo
-    }else { crearMensaje ("PERDISTE")
+    }else { crearMensaje ("PERDISTE" )
 
     vidasJugador--
     spanvidasjugador.innerHTML = vidasJugador
@@ -156,7 +156,7 @@ function combate(){
         crearMensajeFinal("PERDISTE. VUELVE A INTENTAR")
 
     } else if (vidasEnemigo == 0){
-        crearMensajeFinal("FELICIDADES GANASTE")
+        crearMensajeFinal("!!!!!!FELICIDADES GANASTE!!!!!!")
     }
     }  
 
@@ -165,17 +165,21 @@ function aleatorio(min, max)
     return Math.floor(Math.random() * (max - min + 1) + min)
 }
 
-function crearMensaje(resultado_combate){
-    let sectionMensaje =  document.getElementById("mensaje")
+function crearMensaje(resultadobatalla){
+    let sectionMensaje =  document.getElementById("resultadobatalla")
+    let atqsjugador =  document.getElementById("atqsjugador")
+    let atqsenemigo =  document.getElementById("atqsenemigo")
 
-    let parrafo = document.createElement("p")
-    parrafo.innerHTML = "tu mascota ataco con " + ataquejugador + "  El enemigo ataco con " + ataqueEnemigo + "  ===== "+ resultado_combate
+    let nuevoatqjugador = document.createElement("p")
+    let nuevoatqenemigo = document.createElement("p")
 
-    sectionMensaje.appendChild(parrafo)
-
+    sectionMensaje.innerHTML = resultadobatalla
+    nuevoatqjugador.innerHTML = ataquejugador
+    nuevoatqenemigo.innerHTML = ataqueEnemigo
     
-     
-   
+    
+    atqsjugador.appendChild(nuevoatqjugador)
+    atqsenemigo.appendChild(nuevoatqenemigo)
 }
 
 function reiniciarjuego(){
@@ -185,10 +189,10 @@ function reiniciarjuego(){
 function crearMensajeFinal(resultado_final){
     let sectionMensaje =  document.getElementById("mensaje")
 
-    let parrafo = document.createElement("p")
-    parrafo.innerHTML = resultado_final
+    
+    sectionMensaje.innerHTML = resultado_final
 
-    sectionMensaje.appendChild(parrafo)
+    
     let botonfuego = document.getElementById("boton_fuego")
     botonfuego.disabled = true
     let botonagua = document.getElementById("boton_agua")

@@ -476,3 +476,14 @@ input{
     flex-direction: column;
     align-items: center;
 }
+
+#mensaje{
+    background-color: gold;
+    width: 320px;
+    padding: 20px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+
